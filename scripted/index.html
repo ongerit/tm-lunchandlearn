@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Introduction to Computer Programming</title>
+    <meta name="description" content="April 10, 2015">
+    <meta name="author" content="Thomas Ongeri">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+    document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Computer Programming</h1>
+                <small>Sponsored by Tough Mudder Lunch & Learn</small>
+                <h3>April 10, 2015</h3>
+                <p>
+                    <small>By <a href="http://thomasongeri.com" target="_blank">Thomas Ongeri</a></small>
+                </p>
+                <p>
+                    <small>
+                        Slides at: <a href="http://bit.ly/tmlearn"
+                            target="_blank">http://bit.ly/tmlearn</a>
+                    </small>
+                </p>
+            </section>
+            <section>
+                <h2>Why learn about computer programming?</h2>
+                <ul>
+                    <li>
+                        Do you use a computer?
+                    </li>
+                    <li>
+                        Learn how to create your own apps, software, or websites.
+                    </li>
+                    <li>
+                        Make your life easier. Automate tasks.
+                    </li>
+                    <li>
+                        Be inspired, take the initiative, and change the world!
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>How do computers and computer programs work?</h2>
+                <small>
+                        (At a very VERY high level. We won't get into the
+                        details.)
+                    </small>
+                <ul>
+                    <li>
+                        CPU - reads in instructions that are in the form of 0's and 1's.
+                        <small>
+                            For example, 01100011 01101000 01101001 01110000 01101111 01110100 01101100 01100101  is how a computer translates "chipotle"
+                        </small>
+                    </li>
+                    <li>
+                        Program (executable) - A file that is a list of instructions.
+                    </li>
+                    <li>
+                        Code - Human-readable text that gets translated by a compiler/interpreter to 0's and 1's.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Computer Science Crash Course</h2>
+                <p>
+                    There are many different <b>Programming Languages</b>.
+                </p>
+                <br />
+                <p>
+                    Today we will be learning <b>Javascript</b>
+                </p>
+                <br />
+                <p>
+                    But first, let's start from the basics...
+                </p>
+            </section>
+            <section>
+                <h2>Functions and Variables</h2>
+                <p>
+                    Don't worry, it's not hard math! All you need to know are
+                    <b>functions and variables</b>.
+                    <p class="fragment"> eg. 2+1</p>
+                    <p class="fragment"> or x+1</p>
+                    <p class="fragment"> or.... f(x)=x+1</p>
+                    <div class="fragment">
+                        <img src="http://www.betterthanpants.com/media/catalog/product/cache/1/large_preview/9df78eab33525d08d6e5fb8d27136e95/a/n/and-then-satan-said-put-the-alphabet-in-math-shirt-preview.png" width="300">
+                    </div>
+                </p>
+            </section>
+            <section>
+                <h2>Functions</h2>
+                <p>
+                    Let: f(x) = x + 1
+                </p>
+                <p>
+                    What is f(1)?
+                </p>
+                <p class="fragment">
+                    f(2)?
+                </p>
+                <div class="fragment">
+                    <p>
+                        Think of functions as <u>input</u> and <u>output</u>.
+                    </p>
+                    <ul>
+                        <li>
+                            The <u>input</u> is called
+                            <u>argument</u> or <u>parameter</u>
+                        </li>
+                        <li>
+                            The <u>output</u> is called the <u>return value</u>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Functions (cont.)</h2>
+                <p>
+                    In computer programming, functions and variables can be named anything*
+                </p>
+                <small>
+                        * With some restrictions, depending on the programming
+                        language
+                    </small>
+            </section>
+            <section>
+                <p>
+                    Let: thomasTheTicket(ticket) = tickets * 2
+                </p>
+                <small>
+                        Our function is called <i>thomasTheTicket</i>
+                    </small>
+                <br />
+                <p>
+                    thomasTheTicket(100) = ?
+                </p>
+                <p>
+                    thomasTheTicket(100) = <u>200</u>
+                </p>
+            </section>
+            <section>
+                <h2>Functions (cont.)</h2>
+                <p>
+                    Functions can also have more than one (or 0) <b>argument(s)</b>.
+                </p>
+                <p>
+                    Let: bobby(x, y, z) = x + y + z
+                </p>
+                <br />
+                <p>
+                    bobby(1, 2, 3) = ?
+                </p>
+                <p class="fragment">
+                    bobby(1, 2, 3) = <u>6</u>
+                </p>
+            </section>
+            <section>
+                <h2>Variables</h2>
+                <p>
+                    Let: x = 1
+                </p>
+                <p>
+                    Let: bob = 2
+                </p>
+                <br />
+                <p>
+                    2 * x + bob = ?
+                </p>
+                <p class="fragment">
+                    = <u>4</u>
+                </p>
+                <p class="fragment">
+                    Both <i>x</i> and <i>bob</i> are variable names. Variable names can be (almost) anything.
+                </p>
+            </section>
+            <section>
+                <h2>Variables and Functions</h2>
+                <p>
+                    Let: myfunction123(a, b) = a + b
+                </p>
+                <p>
+                    Let: hello = 100
+                </p>
+                <br />
+                <p>
+                    myfunction123(hello, 1) = ?
+                </p>
+                <p class="fragment">
+                    myfunction123(<u>hello</u>, 1) = ?
+                </p>
+                <p class="fragment">
+                    myfunction123(<u>100</u>, 1) = ?
+                </p>
+                <p class="fragment">
+                    = 101
+                </p>
+            </section>
+            <section>
+                <h2>Variable assignment</h2>
+                <p>
+                    Let: abc = 1
+                </p>
+                <p>
+                    Let: def = 2
+                </p>
+                <br />
+                <p>
+                    If we say z = abc + def
+                </p>
+                <p>
+                    z = ?
+                </p>
+                <p class="fragment">
+                    z = <u>abc</u> + <u>def</u>
+                </p>
+                <p class="fragment">
+                    z = <u>1</u> + <u>2</u>
+                </p>
+                <p class="fragment">
+                    z = 3. Easy!
+                </p>
+            </section>
+            <section>
+                <h2>Variable reassignment</h2>
+                <p>
+                    Let: x = 5
+                </p>
+                <p>
+                    Now, let's say:
+                </p>
+                <p>
+                    x = x + 1
+                </p>
+                <br />
+                <p>
+                    What does this mean?
+                </p>
+                <div class="fragment">
+                    <p>
+                        The <b>=</b> sign means <b>assignment</b>.
+                    </p>
+                    <p>
+                        We take the value of the <u>right</u> side of the equals sign and assign that value to the variable on the <u>left</u>.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <p>
+                    Let: x = 5
+                </p>
+                <p>
+                    x = <u>x</u> + 1
+                </p>
+                <p class="fragment">
+                    Now substitute the variables on the right side (like before)
+                </p>
+                <br />
+                <p class="fragment">
+                    x = <u>5</u> + 1
+                </p>
+                <br />
+                <p class="fragment">
+                    x = <u>6</u>
+                </p>
+                <br />
+                <p class="fragment">
+                    We changed the value of x!
+                </p>
+            </section>
+            <section>
+                <p>
+                    So now x = 6
+                </p>
+                <p>
+                    What if we do it again?
+                </p>
+                <p>
+                    x = x + 1
+                </p>
+                <br />
+                <p class="fragment">
+                    x = <u>x</u> + 1
+                </p>
+                <br />
+                <p class="fragment">
+                    x = <u>6</u> + 1
+                </p>
+                <br />
+                <p class="fragment">
+                    x = <u>7</u>
+                </p>
+            </section>
+            <section>
+                <p>
+                    So, x = x + 1 means that we are increasing the value of the variable x by one. The right side is the <b>old</b> value and the left side is the <b>new</b> value.
+                </p>
+                <br />
+                <p class="fragment">
+                    Can you think of why we would need to change the value of a variable?
+                </p>
+            </section>
+            <section>
+                <h2>Some Variable Types</h2>
+                <ul>
+                    <li>Numbers -<i>var myNumber = 1</i></li>
+                    </li>
+                    <li>Booleans - <i>var myBoolean = true</i> (usually denoted true and false)</li>
+                    <li>Strings - <i>var myString = "Everyday I dream about Chipotle & Cellucor"</i>. A string of letters/symbols/numbers. Denoted by the quotation marks ""</li>
+                    <small>
+                            *Tip: "123" is NOT the same as 123
+                        </small>
+                </ul>
+            </section>
+            <!-- If time -->
+            <section>
+                <h2>Logic and Conditionals</h2>
+                <p>
+                    In computer programming, we often want events to happen
+                    <u>only</u> when certain conditions are met. This is what we call logic and conditionals.
+                </p>
+                <br />
+                <p>
+                    These are often in the form of:
+                </p>
+                <p>
+                    if <u>some condition</u>, then <u>do something</u>
+                </p>
+            </section>
+            <section>
+                <h3>Examples</h3>
+                <ul>
+                    <li>
+                        If <u>you receive a message</u>, then <u>show a notification.</u>
+                        <small><u>you receive a message</u> is either true or
+                        false</small>
+                    </li>
+                    <li>
+                        If <u>your game character has enough experience</u>, then <u>your
+                            level will increase</u> ( like level = level + 1 :) )
+                        <small><u>your game character has enough
+                                experience</u> is either true or false</small>
+                    </li>
+                    <li>
+                        I'm sure you can think of more
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>True or False?</h2>
+                <p>
+                    Conditionals are where we use the <u>boolean</u> variable type. Booleans can be either <u>true</u> or <u>false</u>.
+                </p>
+                <br />
+                <p>
+                    age = 10
+                </p>
+                <p>
+                    x = age > 100
+                </p>
+                <br />
+                <p>
+                    x = ?
+                </p>
+                <p class="fragment">
+                    is <u>age > 100</u> true or false?
+                </p>
+                <p class="fragment">
+                    x = <u>false</u>
+                </p>
+            </section>
+            <section>
+                <h1>Where's the Javascript??</h1>
+                <img src="http://treasure.diylol.com/uploads/post/image/599851/resized_winter-is-coming-meme-generator-javascript-is-coming-c1c977.jpg" height="400">
+            </section>
+            <section>
+                <h2>Let's see this in Javascript!</h2>
+                <p>
+                    In Javascript, we create functions like this:
+                </p>
+                <p>
+                    <pre><code data-trim contenteditable>
+function f(x){
+    return x + 1;
+}
+                    </code></pre>
+                </p>
+                <p>
+                    This is the equivalent of saying: f(x) = x + 1
+                </p>
+                <p class="fragment">
+                    Notice the <u>return</u>. This will give us the output value.
+                </p>
+                <br />
+            </section>
+            <section>
+                <p>
+                    <pre><code data-trim contenteditable>
+function f(x){
+    // We will return the value 1 greater than the given argument
+    return x + 1;
+}
+                    </code></pre>
+                </p>
+                <small>The same function with a <u>comment</u></small>
+                <p class="fragment">
+                    If you want the computer to ignore a line you typed, prepend it with a <code>//</code>. This is called a
+                    <b>single line comment</b>.
+                </p>
+                <br />
+                <p class="fragment">
+                    Curly braces ({}) show the beginning/end of a function, and semicolons (;) show the end of a statement.
+                </p>
+            </section>
+            <section>
+                <h2>The If Statement</h2>
+                <p>
+                    In Javascript, the <u>if statement</u> looks like this:
+                </p>
+                <p>
+                    <pre><code data-trim contenteditable>
+if (condition){
+    // Do something here
+}
+                    </pre></code>
+                </p>
+                <p>
+                    Simple, right?
+                </p>
+                <p><a href="http://repl.it/languages/JavaScript" target="_blank">Play</a>
+                    <p>
+            </section>
+            <section>
+                <p>
+                    <pre><code data-trim contenteditable>
+x = 10;
+y = "no";
+if (x > 5){
+    y = "yes";
+}
+                    </pre></code>
+                </p>
+                <p> x > 5 is a <b>boolean expression</b>. That means that it can be either true or false. What is it in this case?
+                </p>
+                <p class="fragment">
+                    y = ?
+                </p>
+                <p class="fragment">
+                    y = <u>"yes"</u>
+                </p>
+                <small class="fragment">y is of <u>string</u> type</small>
+            </section>
+            <section>
+                <h2>Now let's try what we have learned!</h2>
+                <p>
+                    <a href="http://jsbin.com/kisugo/1/edit?js,output" target="_blank">Let's Play</a>
+                </p>
+                <h4>// Ideas:</h4>
+                <ul>
+                    <li>Play with variables:</li>
+                    <dd>a. characterX, characterY, characterYVelocity, ouchText</dd>
+                    <li>Finish increaseScore function</li>
+                    <li>Create jump function</li>
+                    <dd> a. make the character jump</dd>
+                </ul>
+            </section>
+            <section>
+                <h1>That's all Folks!</h1>
+                <img style="width: 164px;height: 100%;border-radius: 147px;" src="img/bob.gif" />
+                <h3>Some resources/links</h3>
+                <ul>
+                    <li>
+                        <a href="http://bit.ly/tmlearn" target="_blank">Code
+                            and slides from this talk</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codecademy.com/" target="_blank">Codecademy</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codecademy.com/" target="_blank">Udacity</a>
+                    </li>
+                    <li>
+                        <a href="http://teamtreehouse.com/" target="_blank">Treehouse</a>
+                    </li>
+                    <li>
+                        <a href="https://www.codeschool.com/" target="_blank">Code School</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codeavengers.com/" target="_blank">Code Avengers</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>
